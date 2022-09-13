@@ -15,3 +15,10 @@ function addRedirect(bt, site) {
     })
 }
 
+// Making imgs clickable
+var imgs = document.getElementsByTagName("img")
+
+for (i = 0; i < imgs.length; i ++) {
+    var img = imgs[i]
+    addRedirect(img, img.src)
+}
